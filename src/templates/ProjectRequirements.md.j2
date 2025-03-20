@@ -1,0 +1,23 @@
+# 项目需求文档
+
+## 项目名称
+{{ project_name }}
+
+## 技术栈
+{{ tech_stack }}
+
+## 生成模式
+{{ mode }}
+
+## 项目结构
+{% if 'React' in tech_stack or 'Vue' in tech_stack %}
+- **前端**：组件化开发，使用 {{ tech_stack }} 构建用户界面。
+{% endif %}
+{% if 'Node.js' in tech_stack or 'Flask' in tech_stack or 'Django' in tech_stack %}
+- **后端**：RESTful API，使用 {{ tech_stack }} 提供数据服务。
+{% endif %}
+
+## 下一步计划
+1. 完成项目初始化
+2. 实现核心功能
+3. 测试与部署
